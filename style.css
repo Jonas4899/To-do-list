@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=Press+Start+2P&display=swap');
+
+:root {
+  --color-background-page: rgb(0, 0, 0);
+  --color-font: rgb(255, 255, 255);
+  --color-title: rgb(252, 163, 17);
+  --color-border-title: rgb(229, 229, 229);
+  --font-text: 'DotGothic16', sans-serif;
+}
+
+body {
+  background-color: var(--color-background-page, black);
+  color: var(--color-font);
+  font-size: 30px;
+  font-family: var(--font-text);
+}
+
+.main-title {
+  color: var(--color-title, orange);
+  font-family: 'Press Start 2P', Verdana;
+  font-size: 1.6em;
+  text-align: center;
+  border: solid;
+  border-radius: 0.5em;
+  border-width: 0.2em;
+  border-color: var(--color-border-title);
+  padding: 1em;
+  margin: 1em 2em;
+}
+
+.sub-title {
+  text-align: center;
+  font-family: var(--font-text);
+}
+
+.activity {
+  height: 2em;
+  width: 40%;
+  margin-left: 28.5%;
+  font-size: 20px;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.add {
+  height: 2em;
+  width: 4em;
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: 600;
+  color: var(--color-title);
+  border: solid;
+  border-color: var(--color-title);
+  border-radius: 1em;
+}
+
+.add:hover {
+  background-color: var(--color-title);
+  color: var(--color-font);
+  border-color: var(--color-font);
+}
+
+div {
+  width: 44%;
+  height: 2em;
+  padding: 0.4em;
+  margin: 2em auto;
+  position: relative;
+  border: solid;
+  border-radius: 1em;
+  border-width: 0.3em;
+  border-color: var(--color-title);
+  background-color: rgb(20, 33, 61);
+}
+
+div [type="checkbox"] {
+  width: 2.5em;
+  height: 2.5em;
+  margin-right: 1em;
+}
+
+div label {
+  width: 50%;
+  margin: auto;
+}
+
+/*Delete button*/
+div button {
+  width: 6em;
+  height: 3em;
+  position: absolute;
+  right: 20px;
+  bottom: -30px;
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: 600;
+  color: rgb(203, 50, 52);
+  border: solid;
+  border-color: rgb(203, 50, 52);
+  border-radius: 3em;
+}
+
+div button:hover {
+  background-color: rgb(203, 50, 52);
+  color: var(--color-font);
+  border-color: var(--color-font);
+}
+
