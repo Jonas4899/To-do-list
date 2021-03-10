@@ -5,16 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>To-do-List</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Arimo&family=Fascinate&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1 class="main-title">To - do - list</h1>
-  </header>
   <main>
-    <p class="sub-title">Things to do today ...</p>
-    <input type="text" name="activity" id="activity" class="activity" placeholder="Let's add some tasks!">
-    <button class="add">Add</button>
+    <!-- ************************* MAIN TITLE ************************** -->
+    <header>
+      <h1>To - do - list</h1>
+    </header>
+    <!-- ************************* ADD TASKS ************************** -->
+    <section class="add-task">
+      <h2>Things to do today ...</h2>
+      <div class="content-wrap">
+        <input type="text" name="activity" id="activity" placeholder="Let's add some tasks!">
+        <button class="add-button">Add</button>
+      </div>
+    </section>
   </main>
+  <!-- ************************* TASKS LIST ************************** -->
+  <section class="task-list">
+
+  </section>
   <script src="script.js"></script>
 </body>
 </html>

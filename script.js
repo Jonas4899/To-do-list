@@ -1,12 +1,13 @@
-const activity = document.querySelector('.activity');
-const add = document.querySelector('.add');
+const activity = document.querySelector('.add-task input[type="text"]');
+const addBtn = document.querySelector('.add-button');
+const taskSection = document.querySelector('.task-list');
 
 class Task {
   constructor(name) {
     this.name = name;
   }
 
-  showTask () { 
+  showTask () {
     let div = document.createElement('div');
     let checkbox = document.createElement('input');
     let label = document.createElement('label');
@@ -19,10 +20,11 @@ class Task {
     div.appendChild(checkbox);
     div.appendChild(label);
     div.appendChild(btnDelete);
-    document.body.appendChild(div);
+    taskSection.appendChild(div);
 
+    /* Add the action of delete to the bottom */
     btnDelete.onclick = function() {
-      document.body.removeChild(div);
+      taskSection.removeChild(div);
     }
   }
 }
@@ -37,4 +39,5 @@ function addElement() {
   }
 }
 
-add.addEventListener('click', addElement);
+addBtn.addEventListener('click', addElement);
+
